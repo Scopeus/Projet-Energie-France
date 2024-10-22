@@ -7,3 +7,4 @@ plotly
 xgboost
 joblib
 scikit-learn
+pickle
