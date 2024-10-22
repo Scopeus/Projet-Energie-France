@@ -313,7 +313,7 @@ elif page == pages[3]:
     
     # Afficher les résultats des modèles
     pd.set_option('display.max_columns', None)
-    result_models = pd.read_csv("result_models.csv', sep=';', header=0)
+    result_models = pd.read_csv("result_models.csv", sep=';', header=0)
     st.write(result_models)
 
     st.image("Images/post-gridsearch.png")
