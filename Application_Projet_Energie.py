@@ -354,7 +354,7 @@ elif page == pages[3]:
 
     st.write("On remarque que les modèles suivent bien les tendances du réel. Tous sous-estiment les valeurs en semaine et surestiment les valeurs du week-end")
     
-    model_path = r"C:\Users\tonym\OneDrive\MOSCAT OneDrive\PROFESSIONNEL\DATASCIENTEST\Projet ENERGIE\Modèles et résultats JOBLIB\Random_Forest_Regressor_model.pkl"
+    model_path = "Modèles et résultats JOBLIB/Random_Forest_Regressor_model.pkl"
     model = joblib.load(model_path)
     st.session_state.new_data = pd.DataFrame()
     # Conversion de la colonne 'date_heure' en datetime sans format spécifié
