@@ -319,7 +319,7 @@ elif page == pages[3]:
     st.image("Images/post-gridsearch.png")
 
     # Charger les résultats sauvegardés
-    results_path = "Modèles et résultats JOBLIB/LRresults.pkl"
+    results_path = "Modèles_et_résultats_JOBLIB/LRresults.pkl"
     results = joblib.load(results_path)
     
     #Afficher les features importances
