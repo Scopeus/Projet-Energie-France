@@ -354,7 +354,7 @@ elif page == pages[3]:
 
     st.write("On remarque que les modèles suivent bien les tendances du réel. Tous sous-estiment les valeurs en semaine et surestiment les valeurs du week-end")
     
-    model_path = "Modèles et résultats JOBLIB/Random_Forest_Regressor_model.pkl"
+    model_path = "Modèles_et_résultats_JOBLIB/Random_Forest_Regressor_model.pkl"
     model = joblib.load(model_path)
 
 
