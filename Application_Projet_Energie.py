@@ -209,7 +209,7 @@ En exploitant ces informations, il devient possible d’optimiser les **prévisi
     
     st.plotly_chart(fig2)
     st.markdown("""
-*Analyse :**
+**Analyse :**
 
 La **région Île-de-France** se distingue par une consommation énergétique nettement plus élevée que les autres régions, principalement en raison de sa **forte densité de population** et de son rôle de **pôle économique majeur**. En plus du nombre d’habitants, la concentration de **bâtiments énergivores**, comme les bureaux, les centres commerciaux et les data centers, accentue cette demande en électricité.
 
