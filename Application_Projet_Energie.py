@@ -37,30 +37,34 @@ pd.set_option('display.max_columns', None)
 dfsmp = pd.read_csv('dfsmp.csv', sep=',', header=0)
 
 if page == pages[0]:
-    #st.write("### Contexte du projet")
+    # Titre de la section avec mise en forme
     st.markdown("<h1 style='text-align: center;'>Contexte du projet</h1>", unsafe_allow_html=True)
     st.write("---")
 
-    st.write("La croissance démographique, l’accès d’une part grandissante de la population mondiale à l’énergie, le développement rapide de certaines économies, synonyme d’industrialisation, les pays développés habitués à une énergie abondante et relativement bon marché, sont autant de facteurs contribuant à une hausse continue de la consommation d’énergie.")
-    st.write("Le secteur économique de l'énergie en France comprend la production locale et l'importation d'énergie primaire, Pour couvrir les besoins énergétiques de la France, la branche énergétique française utilise de l'énergie primaire, produite en France ou importée, puis la transforme et la distribue aux utilisateurs.")
-    st.write("Nous nous intéressons à la production locale, ainsi la France compte dans son mix énergétique des énergies fossiles et d’autres renouvelables tels que : le nucléaire, le pétrole, le gaz naturel, les énergies renouvelables et déchets.")
-    st.write("Le gestionnaire du réseau de transport d'électricité français RTE représente chaque jour, et en temps réel, les données liées à la consommation et production d’électricité sur sa plateforme Eco2Mix.")
-    st.write("L'objectif de notre projet consiste à explorer et visualiser les données à partir des données mise à notre disposition à partir de cette plateforme afin de constater le phasage entre la consommation et d'autres paramètres tels que la production énergétique au niveau national et au niveau régional (risque de black-out notamment), les conditions météorologiques ou la densité de population. Dans ce sens nous allons nous focaliser sur :")
-    st.write("- L’analyse au niveau régional pour en déduire une prévision de consommation")
-    st.write("- L’analyse par filière de production : énergie nucléaire / renouvelable")
-    st.write("- Un focus sur les énergies renouvelables et leurs lieux d’implantation.")
-    st.write("Pour y parvenir, nous allons utiliser un ensemble de données d’approximativement 2 millions d’enregistrements. Les données contiennent les informations sur la consommation d’électricité et sa production à partir de plusieurs sources d’énergie : nucléaire, solaire, éolienne, bioénergie, fioul, …  par région métropolitaine (hors corse) enregistrées par demi-heure.")
+    st.write("La croissance démographique et l’industrialisation rapide de certaines économies entraînent une augmentation constante de la consommation d’énergie, accentuée par l’accès élargi à l’énergie dans le monde et les habitudes des pays développés reposant sur une énergie abondante et abordable.")
+    st.write("En France, le secteur énergétique repose sur une production locale combinée à l’importation d’énergie primaire. Ces ressources sont ensuite transformées et distribuées pour répondre aux besoins nationaux.")
+    st.write("Le mix énergétique français comprend à la fois des énergies fossiles et renouvelables, incluant le nucléaire, le pétrole, le gaz naturel ainsi que différentes sources d’énergies renouvelables et les déchets.")
+    st.write("Le Réseau de Transport d'Électricité (RTE) met à disposition des données en temps réel sur la production et la consommation d’électricité via sa plateforme Eco2Mix.")
+    st.write("Notre projet vise à analyser et visualiser ces données afin d’étudier le lien entre la consommation énergétique et divers paramètres tels que la production par filière, la répartition géographique, les conditions météorologiques et la densité de population. Plus spécifiquement, nous allons nous focaliser sur :")
+    st.write("- L’analyse régionale permettant d’anticiper la consommation énergétique.")
+    st.write("- L’étude détaillée des filières de production, en mettant l’accent sur l’énergie nucléaire et renouvelable.")
+    st.write("- Un examen approfondi de l’implantation géographique des énergies renouvelables.")
+    st.write("Pour mener cette étude, nous utiliserons un jeu de données d’environ 2 millions d’enregistrements, fournissant des informations sur la consommation et la production électrique par type d’énergie (nucléaire, solaire, éolien, bioénergie, fioul, etc.) et par région métropolitaine (hors Corse), avec des relevés effectués toutes les 30 minutes.")
     st.image("Images/Image énergies.jpg")
 
 elif page == pages[1]:
-    #st.write("Notre DataFrame sur les consommations d'énergie par région et par tranche de 3 h")
+    # Titre de la section Exploration des données
     st.markdown("<h1 style='text-align: center;'>Exploration des données</h1>", unsafe_allow_html=True)
     st.write("---")
+    
     st.markdown("""  
-Cette section a pour objectif d'explorer notre jeu de données afin d'identifier les différentes valeurs et modalités de nos variables. Le **dataframe** affiché est le résultat de notre processus de **nettoyage des données**, du **traitement des valeurs manquantes**, ainsi que de l'ajout de **variables pertinentes**. Nous avons également croisé les données avec des axes d'analyse supplémentaires que nous jugeons utiles, tels que la population et les conditions météorologiques.
+Dans cette partie, nous allons examiner en détail notre ensemble de données afin d'identifier ses principales caractéristiques et comprendre les différentes valeurs et modalités de ses variables. Le **dataframe** présenté ici est le résultat d’un travail de **nettoyage des données**, de **gestion des valeurs manquantes** et de création de **nouvelles variables pertinentes**. 
 
-Nous y examinons les principales caractéristiques des données, telles que les régions, les périodes horaires, ainsi que les années, pour mieux comprendre la structure et la répartition des informations. Nous affichons également les statistiques descriptives clés, telles que les moyennes, les minimums, et les maximums. Nous allons explorer plus en détails ces axes et leurs impacts dans la section suivante dédiée à l'**analyse et visualisation**.
+Nous avons également enrichi notre analyse en croisant ces données avec des indicateurs complémentaires comme la population et les conditions météorologiques.
+
+Nous étudierons la répartition des données selon plusieurs dimensions : les régions, les tranches horaires et les années. De plus, nous mettrons en évidence des statistiques descriptives clés comme les moyennes, les valeurs minimales et maximales. Ces analyses serviront de base pour la prochaine étape consacrée à l’**analyse et visualisation des données**.
 """)
+         
     st.write("")
     st.write("Notre DataFrame sur les consommations d'énergie par région et par tranche de 3 h")
     st.write("")
@@ -104,17 +108,17 @@ Nous y examinons les principales caractéristiques des données, telles que les 
         st.write('Forme du DataFrame :')
         st.write(dfsmp.shape)
 
-elif page == pages[2]:
-    #st.write("### Analyse des Données")
+if page == pages[2]:
+    # Titre de la section Analyse et visualisation des données
     st.markdown("<h1 style='text-align: center;'>Analyse et visualisation des Données</h1>", unsafe_allow_html=True)
     st.write("---")
+    
+    st.markdown("""  
+Dans cette partie, nous allons examiner en détail les **données de consommation et de production énergétique** en France sous différents angles. L'objectif est d'identifier les tendances de la demande énergétique en fonction de **l'heure**, du **jour** et des **régions**, afin de mettre en lumière les variations et les écarts entre les différentes zones géographiques.
 
-    st.markdown("""
-Dans cette étude, nous allons explorer les **données de consommation énergétique** et les **données de production d’énergie** en France à travers différents angles d’analyse. L'objectif est de comprendre les variations de la demande énergétique par **jour**, **heure**, et **région**. Ces axes nous permettront de visualiser les fluctuations régulières et les éventuelles disparités entre les différentes zones géographiques.
+En parallèle, nous avons choisi d’**intégrer d’autres paramètres externes**, tels que **les conditions météorologiques** et **la répartition de la population**, afin d'évaluer leur influence sur la consommation d’énergie. Par exemple, la météo peut impacter l’utilisation du chauffage et de la climatisation, tandis que la densité de population peut justifier certaines disparités régionales.
 
-En complément, nous avons décidé de **croiser ces données avec d'autres facteurs** comme les **conditions météorologiques** et la **population**. Ce croisement vise à évaluer si ces éléments extérieurs influencent significativement la consommation énergétique. En effet, la météo peut avoir un impact direct sur l'utilisation du chauffage ou de la climatisation, tandis que la densité de population peut expliquer certaines différences entre les régions.
-
-L'enjeu ici est de déterminer si ces **nouvelles dimensions** apportent un éclairage supplémentaire pertinent à notre étude. Ces croisements pourraient nous offrir une vision plus complète des dynamiques énergétiques en France et nous permettre d’anticiper les évolutions futures, que ce soit en termes de **gestion des infrastructures** ou d’**optimisation de l’énergie**.
+L’objectif principal est de vérifier si ces **facteurs supplémentaires** permettent une meilleure compréhension des dynamiques énergétiques en France. Une telle approche pourrait non seulement améliorer notre lecture des tendances actuelles, mais aussi anticiper les évolutions futures pour une **meilleure gestion des infrastructures** et une **optimisation de l’énergie**.
 """)
     st.write("")
     # Prétraitement des données pour assurer le bon format des colonnes
@@ -138,14 +142,14 @@ L'enjeu ici est de déterminer si ces **nouvelles dimensions** apportent un écl
     st.markdown("""
     **Analyse :**
 
-    Comme attendu, la région **Provence-Alpes-Côte d'Azur (PACA)** se distingue par des **températures moyennes plus élevées**, ce qui peut influencer la **consommation énergétique**, notamment en été avec une probable demande accrue en **climatisation**.
+         Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
 
-    À l'inverse, les régions proches du littoral (**Hauts-de-France, Normandie, Bretagne**) présentent des **températures plus basses en moyenne**, ce qui suggère une demande énergétique plus importante pour le **chauffage** durant les mois froids.
+         À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
 
-    Enfin, l'analyse saisonnière montre une **chute des températures pendant les mois d'hiver**, particulièrement marquée dans des régions plus continentales comme le **Grand Est**, où la **consommation énergétique pour le chauffage** est probablement au plus haut.
+         L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
 
-    Cette analyse met en lumière les **variations régionales** et **saisonnières** qui influencent directement les besoins énergétiques en France.
-    """)
+         En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
+         """)
     st.write ("******************************************************************************************************************")
     #############################################################################
     df = dfsmp.groupby('annee_mois').agg({
@@ -180,12 +184,15 @@ L'enjeu ici est de déterminer si ces **nouvelles dimensions** apportent un écl
     st.markdown("""
 **Analyse :**
 
-L'analyse montre clairement que la **météo**, et plus spécifiquement la **température**, a un impact direct sur la **production d'énergie nucléaire**. Pendant les périodes de fortes chaleurs, notamment en été, la production d'énergie nucléaire tend à diminuer. Cela peut s'expliquer par le fait que les centrales nucléaires doivent réduire leur production lorsque les températures extérieures sont trop élevées, en raison des contraintes environnementales liées à l'eau utilisée pour le refroidissement. À l'inverse, pendant les mois les plus froids, la production augmente pour répondre à une demande énergétique plus forte, en particulier pour le chauffage.
+L’étude met en évidence un lien direct entre la **météo**, et plus particulièrement la **température**, et la **production d’énergie nucléaire**. Durant les périodes de chaleur intense, notamment en été, on observe une diminution de la production nucléaire. Cela s’explique par le fait que les centrales doivent limiter leur activité lorsque les températures extérieures sont trop élevées, en raison des contraintes environnementales liées au refroidissement des réacteurs. 
 
-Cette corrélation inverse souligne l'importance d'étudier les **données météorologiques** dans le cadre de la gestion énergétique. Le croisement de notre jeu de données sur la consommation et la production d'énergie avec des **données météorologiques** permet de mieux comprendre les dynamiques sous-jacentes et d'anticiper les pics de demande.
+À l’inverse, lors des mois les plus froids, la production nucléaire tend à augmenter afin de répondre à une **demande énergétique plus élevée**, notamment pour le chauffage.
 
-En intégrant les données météorologiques, nous sommes en mesure d'affiner nos **prévisions en matière de consommation énergétique** et de mieux comprendre comment la météo influe directement sur la production d'énergie.
+Cette relation inverse souligne l’importance de prendre en compte les **données météorologiques** dans l’optimisation de la gestion énergétique. L’intégration de ces paramètres dans notre analyse des tendances de **consommation et de production** permet d’anticiper plus efficacement les périodes de forte demande.
+
+En exploitant ces données, il devient possible d’améliorer la **précision des prévisions énergétiques** et de mieux appréhender l’influence des variations climatiques sur la production d’électricité.
 """)
+         
     st.write ("******************************************************************************************************************")
     ################################################################
 
