@@ -9,7 +9,7 @@ from datetime import datetime
 import xgboost
 import joblib
 
-st.sidebar.title("Projet d'analyse et de prédiction Production et Consommation de l'énergie en France")
+st.sidebar.title("Projet d'analyse et de prédiction de la consommation d'énergie en France")
 
 # Ajout d'un séparateur
 st.sidebar.markdown("---")
