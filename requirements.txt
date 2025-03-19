@@ -1,4 +1,5 @@
---no-cache-dir
+scikit-learn==1.2.2
+joblib==1.2.0
 pandas
 numpy
 streamlit
@@ -6,5 +7,3 @@ seaborn
 matplotlib
 plotly
 xgboost
-joblib==1.2.0
-scikit-learn==1.2.2
