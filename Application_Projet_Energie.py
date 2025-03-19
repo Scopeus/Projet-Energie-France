@@ -140,12 +140,12 @@ L’objectif principal est de vérifier si ces **facteurs supplémentaires** per
     
     st.plotly_chart(fig)    
     st.markdown("""
-    **Analyse :**
-    Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
-    À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
-    L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
-    En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
-    """)
+**Analyse :**
+Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
+À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
+L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
+En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
+""")
          
     st.write ("******************************************************************************************************************")
     #############################################################################
