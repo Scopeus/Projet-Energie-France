@@ -141,15 +141,12 @@ L’objectif principal est de vérifier si ces **facteurs supplémentaires** per
     st.plotly_chart(fig)    
     st.markdown("""
     **Analyse :**
-
-         Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
-
-         À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
-
-         L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
-
-         En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
-         """)
+    Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
+    À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
+    L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
+    En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
+    """)
+         
     st.write ("******************************************************************************************************************")
     #############################################################################
     df = dfsmp.groupby('annee_mois').agg({
@@ -184,13 +181,13 @@ L’objectif principal est de vérifier si ces **facteurs supplémentaires** per
     st.markdown("""
 **Analyse :**
 
-L’étude met en évidence un lien direct entre la **météo**, et plus particulièrement la **température**, et la **production d’énergie nucléaire**. Durant les périodes de chaleur intense, notamment en été, on observe une diminution de la production nucléaire. Cela s’explique par le fait que les centrales doivent limiter leur activité lorsque les températures extérieures sont trop élevées, en raison des contraintes environnementales liées au refroidissement des réacteurs. 
+L’étude révèle une corrélation directe entre la **météorologie**, en particulier la **température**, et la **production d’électricité nucléaire**. Pendant les périodes de fortes chaleurs, notamment en été, la production diminue. Cette baisse s’explique par la nécessité pour les centrales nucléaires de réguler leur activité lorsque la température extérieure est élevée, afin de respecter les contraintes liées au refroidissement des réacteurs.
 
-À l’inverse, lors des mois les plus froids, la production nucléaire tend à augmenter afin de répondre à une **demande énergétique plus élevée**, notamment pour le chauffage.
+À l’inverse, durant les mois d’hiver, la production nucléaire s’intensifie pour faire face à une **augmentation de la demande énergétique**, notamment due aux besoins en chauffage.
 
-Cette relation inverse souligne l’importance de prendre en compte les **données météorologiques** dans l’optimisation de la gestion énergétique. L’intégration de ces paramètres dans notre analyse des tendances de **consommation et de production** permet d’anticiper plus efficacement les périodes de forte demande.
+Ce phénomène met en évidence l’importance de prendre en compte les **facteurs météorologiques** dans la gestion de l’énergie. L’intégration de ces données à notre analyse de la **consommation et de la production électrique** permet d’anticiper plus précisément les fluctuations de la demande.
 
-En exploitant ces données, il devient possible d’améliorer la **précision des prévisions énergétiques** et de mieux appréhender l’influence des variations climatiques sur la production d’électricité.
+En exploitant ces informations, il devient possible d’optimiser les **prévisions énergétiques** et de mieux comprendre l’impact des variations climatiques sur la production nucléaire.
 """)
          
     st.write ("******************************************************************************************************************")
@@ -207,13 +204,10 @@ En exploitant ces données, il devient possible d’améliorer la **précision d
     
     st.plotly_chart(fig2)
     st.markdown("""
-    **Analyse :**
-
-    La **région Ile-de-France** affiche une consommation d'énergie bien supérieure aux autres régions, ce qui est en grande partie lié à sa **forte densité de population** et à son statut de **centre économique majeur**. Outre la population, la présence de nombreuses **infrastructures énergivores**, telles que les bureaux, centres commerciaux et centres de données, contribue également à cette forte demande en énergie.
-
-    À l'inverse, les régions comme le **Centre-Val de Loire**, la **Bretagne** et la **Bourgogne-Franche-Comté**, qui sont moins peuplées et ont un profil économique plus rural, affichent logiquement une **consommation plus faible**. Ces régions sont davantage orientées vers des usages résidentiels de l'énergie, avec une moindre présence de grandes infrastructures industrielles ou tertiaires.
-
-    De plus, l'analyse révèle une **forte variation saisonnière**, avec des pics de consommation clairement visibles en hiver, probablement en lien avec l'augmentation de la demande pour le chauffage. Le croisement des **données météorologiques** pourrait apporter une meilleure compréhension des facteurs qui influencent ces variations, en confirmant que les périodes de plus forte consommation coïncident avec les mois les plus froids.
+    *Analyse :**
+    La **région Île-de-France** se distingue par une consommation énergétique nettement plus élevée que les autres régions, principalement en raison de sa **forte densité de population** et de son rôle de **pôle économique majeur**. En plus du nombre d’habitants, la concentration de **bâtiments énergivores**, comme les bureaux, les centres commerciaux et les data centers, accentue cette demande en électricité.
+    À l’inverse, des régions comme le **Centre-Val de Loire**, la **Bretagne** et la **Bourgogne-Franche-Comté** enregistrent une **consommation plus faible**, ce qui s’explique par une **densité de population moindre** et un tissu économique davantage tourné vers des activités rurales. Ces territoires sont principalement axés sur une consommation résidentielle, avec une présence limitée de grandes infrastructures industrielles ou tertiaires.
+    L’analyse met également en évidence une **forte saisonnalité**, avec une hausse marquée de la consommation en hiver, probablement due à l’augmentation des besoins en chauffage. L’intégration des **données météorologiques** dans l’étude permettrait d’affiner cette observation, en confirmant que les périodes de consommation maximale correspondent aux mois les plus froids.
     """)
     st.write ("******************************************************************************************************************")
     ################################################################
