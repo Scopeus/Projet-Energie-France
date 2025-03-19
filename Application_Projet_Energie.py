@@ -141,10 +141,15 @@ L’objectif principal est de vérifier si ces **facteurs supplémentaires** per
     st.plotly_chart(fig)    
     st.markdown("""
 **Analyse :**
+
 Comme on pouvait s’y attendre, la région **Provence-Alpes-Côte d'Azur (PACA)** affiche des **températures moyennes plus élevées**, ce qui a un impact direct sur la **consommation énergétique**. En période estivale, cela se traduit par une hausse probable de la demande en **climatisation**.
+
 À l’inverse, les régions côtières telles que les **Hauts-de-France, la Normandie et la Bretagne** enregistrent des **températures plus basses en moyenne**. Cette situation laisse supposer une consommation accrue d’énergie en hiver, notamment en raison d’un **besoin plus important en chauffage**.
+
 L’analyse des variations saisonnières met également en évidence une **baisse significative des températures durant l’hiver**, particulièrement marquée dans les zones continentales comme le **Grand Est**. Cette tendance accentue la **demande énergétique liée au chauffage**, qui atteint sans doute son niveau maximal pendant cette période.
+
 En résumé, cette étude illustre clairement l’impact des **facteurs géographiques et saisonniers** sur les besoins en énergie à travers la France.
+
 """)
          
     st.write ("******************************************************************************************************************")
@@ -204,11 +209,16 @@ En exploitant ces informations, il devient possible d’optimiser les **prévisi
     
     st.plotly_chart(fig2)
     st.markdown("""
-    *Analyse :**
-    La **région Île-de-France** se distingue par une consommation énergétique nettement plus élevée que les autres régions, principalement en raison de sa **forte densité de population** et de son rôle de **pôle économique majeur**. En plus du nombre d’habitants, la concentration de **bâtiments énergivores**, comme les bureaux, les centres commerciaux et les data centers, accentue cette demande en électricité.
-    À l’inverse, des régions comme le **Centre-Val de Loire**, la **Bretagne** et la **Bourgogne-Franche-Comté** enregistrent une **consommation plus faible**, ce qui s’explique par une **densité de population moindre** et un tissu économique davantage tourné vers des activités rurales. Ces territoires sont principalement axés sur une consommation résidentielle, avec une présence limitée de grandes infrastructures industrielles ou tertiaires.
-    L’analyse met également en évidence une **forte saisonnalité**, avec une hausse marquée de la consommation en hiver, probablement due à l’augmentation des besoins en chauffage. L’intégration des **données météorologiques** dans l’étude permettrait d’affiner cette observation, en confirmant que les périodes de consommation maximale correspondent aux mois les plus froids.
-    """)
+*Analyse :**
+
+La **région Île-de-France** se distingue par une consommation énergétique nettement plus élevée que les autres régions, principalement en raison de sa **forte densité de population** et de son rôle de **pôle économique majeur**. En plus du nombre d’habitants, la concentration de **bâtiments énergivores**, comme les bureaux, les centres commerciaux et les data centers, accentue cette demande en électricité.
+
+À l’inverse, des régions comme le **Centre-Val de Loire**, la **Bretagne** et la **Bourgogne-Franche-Comté** enregistrent une **consommation plus faible**, ce qui s’explique par une **densité de population moindre** et un tissu économique davantage tourné vers des activités rurales. Ces territoires sont principalement axés sur une consommation résidentielle, avec une présence limitée de grandes infrastructures industrielles ou tertiaires.
+
+L’analyse met également en évidence une **forte saisonnalité**, avec une hausse marquée de la consommation en hiver, probablement due à l’augmentation des besoins en chauffage. L’intégration des **données météorologiques** dans l’étude permettrait d’affiner cette observation, en confirmant que les périodes de consommation maximale correspondent aux mois les plus froids.
+
+""")
+         
     st.write ("******************************************************************************************************************")
     ################################################################
 
