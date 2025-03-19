@@ -439,7 +439,7 @@ elif page == pages[3]:
     # Afficher les résultats des modèles
     pd.set_option('display.max_columns', None)
     #result_models = pd.read_csv('result_models.csv', sep=';', header=0)
-    results_algo = joblib.load('Modèles et résultats JOBLIB/results_df_algo.joblib')
+    results_algo = joblib.load('Modèles_et_résultats _JOBLIB/results_df_algo.joblib')
     
     # Fonction pour formater les grands nombres
     def format_large_integers(val):
@@ -479,7 +479,7 @@ elif page == pages[3]:
     st.write('##### Optimisation des Modèles avec la méthode Grid Search')
     st.write("")
  
-    results_grid = joblib.load('Modèles et résultats JOBLIB/results_df_grid.joblib')
+    results_grid = joblib.load('Modèles_et_résultats _JOBLIB/results_df_grid.joblib')
     st.write(results_grid)
 
     #st.image("Images\post-gridsearch.png")
@@ -495,7 +495,7 @@ elif page == pages[3]:
     """)
 
     # Charger les résultats sauvegardés
-    results_path = 'Modèles et résultats JOBLIB/LRresults.pkl'
+    results_path = 'Modèles_et_résultats _JOBLIB/LRresults.pkl'
     results = joblib.load(results_path)
 
 
@@ -635,7 +635,7 @@ Bien que les dynamiques globales soient correctement appréhendées, affiner ces
     ainsi un outil interactif pour anticiper les besoins en énergie et optimiser la gestion des ressources.
     """)
     st.write("")
-    model_path = "Modèles et résultats JOBLIB/Random_Forest_Regressor_model.pkl"
+    model_path = "Modèles_et_résultats _JOBLIB/Random_Forest_Regressor_model.pkl"
     model = joblib.load(model_path)
     st.session_state.new_data = pd.DataFrame()
     # Conversion de la colonne 'date_heure' en datetime sans format spécifié
