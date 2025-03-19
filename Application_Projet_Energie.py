@@ -16,9 +16,9 @@ st.sidebar.markdown("---")
 
 # Section pour les auteurs avec un format plus lisible
 st.sidebar.subheader("Réalisé par :")
+st.sidebar.write("- Tony Moscatelli")
 st.sidebar.write("- Mounya Kazi Aoual")
 st.sidebar.write("- Thierry Allem")
-st.sidebar.write("- Tony Moscatelli")
 
 # Ajout d'un autre séparateur
 st.sidebar.markdown("---")
@@ -43,7 +43,7 @@ if page == pages[0]:
 
     st.write("La croissance démographique, l’accès d’une part grandissante de la population mondiale à l’énergie, le développement rapide de certaines économies, synonyme d’industrialisation, les pays développés habitués à une énergie abondante et relativement bon marché, sont autant de facteurs contribuant à une hausse continue de la consommation d’énergie.")
     st.write("Le secteur économique de l'énergie en France comprend la production locale et l'importation d'énergie primaire, Pour couvrir les besoins énergétiques de la France, la branche énergétique française utilise de l'énergie primaire, produite en France ou importée, puis la transforme et la distribue aux utilisateurs.")
-    st.write("Nous nous intéressons à la production locale, ainsi la France compte dans son bouquet énergétique des énergies fossiles et d’autres renouvelables tels que : le nucléaire, le pétrole, le gaz naturel, des d'énergies renouvelables et déchets.")
+    st.write("Nous nous intéressons à la production locale, ainsi la France compte dans son mix énergétique des énergies fossiles et d’autres renouvelables tels que : le nucléaire, le pétrole, le gaz naturel, les énergies renouvelables et déchets.")
     st.write("Le gestionnaire du réseau de transport d'électricité français RTE représente chaque jour, et en temps réel, les données liées à la consommation et production d’électricité sur sa plateforme Eco2Mix.")
     st.write("L'objectif de notre projet consiste à explorer et visualiser les données à partir des données mise à notre disposition à partir de cette plateforme afin de constater le phasage entre la consommation et d'autres paramètres tels que la production énergétique au niveau national et au niveau régional (risque de black-out notamment), les conditions météorologiques ou la densité de population. Dans ce sens nous allons nous focaliser sur :")
     st.write("- L’analyse au niveau régional pour en déduire une prévision de consommation")
