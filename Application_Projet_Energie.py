@@ -9,7 +9,7 @@ from datetime import datetime
 import xgboost
 import joblib
 
-st.sidebar.title("Projet Analyse Énergétique")
+st.sidebar.title("Projet d'analyse et de prédiction Production et Consommation de l'énergie en France")
 
 # Ajout d'un séparateur
 st.sidebar.markdown("---")
@@ -49,7 +49,7 @@ if page == pages[0]:
     st.write("- L’analyse au niveau régional pour en déduire une prévision de consommation")
     st.write("- L’analyse par filière de production : énergie nucléaire / renouvelable")
     st.write("- Un focus sur les énergies renouvelables et leurs lieux d’implantation.")
-    st.write("- Pour y parvenir, nous allons utiliser un ensemble de données d’approximativement 2 millions d’enregistrements. Les données contiennent les informations sur la consommation d’électricité et sa production à partir de plusieurs de plusieurs sources d’énergie : nucléaire, solaire, éolienne, bioénergie, fioul, …  par région métropolitaine (hors corse) enregistrées par demi-heure.")
+    st.write("Pour y parvenir, nous allons utiliser un ensemble de données d’approximativement 2 millions d’enregistrements. Les données contiennent les informations sur la consommation d’électricité et sa production à partir de plusieurs sources d’énergie : nucléaire, solaire, éolienne, bioénergie, fioul, …  par région métropolitaine (hors corse) enregistrées par demi-heure.")
     st.image("Images/Image énergies.jpg")
 
 elif page == pages[1]:
@@ -716,7 +716,7 @@ Bien que les dynamiques globales soient correctement appréhendées, affiner ces
 
     
 elif page == pages[4]:
-    st.markdown("<h1 style='text-align: center;'>Conculsion et Perspectives</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Conclusion et Perspectives</h1>", unsafe_allow_html=True)
     st.write("---")
 
     st.markdown("""
